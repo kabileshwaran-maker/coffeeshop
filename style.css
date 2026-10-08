@@ -1,0 +1,820 @@
+/* Default code Starts here */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #eff2f7; */
+    /* font-family:     ; */
+
+    /* color: #212529;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.5;
+    /* letter-spacing: 0.1rem; */
+    /* -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto; */ 
+}
+
+h1 {
+    /* background-color: #be9c79; */
+    /* font-family: "Merienda", serif;
+    color: #212529;
+    font-size: 6.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: .5rem; */
+}
+
+h2 {
+    /* font-family: "Merienda", serif;
+    color: #212529;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1.5rem; */
+}
+
+h6 {
+    /* font-family: "Nunito Sans", serif;
+    color: #212529;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 1rem; */
+
+}
+
+p {
+    /* font-family: "Nunito Sans", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5; */
+}
+
+i {
+    color: #f7f5f4;
+    background-color: var(--primaryColor);
+}
+
+
+button {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    transition: background-color 0.2s ease;
+}
+
+/* :::::SCROLL BAR CODE S T A R T S::::: */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 1.5rem;
+    /* Vertical scrollbar */
+    height: 10px;
+    /* Horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #f9f9fa;
+    /* border-radius: 5px; */
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fefeff;
+}
+
+/* :::::SCROLL BAR CODE E N D S::::: */
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    /* height: auto; */
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #212529;
+    --darkColor: #212529;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 2.5rem;
+    --ffPrimary: "Nunito Sans", serif;
+    --ffSecondary: "Merienda", serif;
+}
+
+/* project standard classes Starts */
+
+.componentSpacing {
+    padding: 2rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 1200px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.screenSizeTwo {
+    max-width: 990px;
+    margin: auto;
+}
+
+/* .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem; */
+/* } */
+
+.grid-2 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+    gap: 3rem; */
+}
+
+.grid-3 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem 0rem;
+    gap: 2.5rem;
+    padding: 1rem 2rem; */
+}
+
+.grid-4 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    gap: 1rem;
+    padding: 0rem 5rem; */
+}
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+.dflex-start {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: start;
+    /* left & right Alignment */
+}
+
+.headerBlock img {
+    width: auto;
+    height: 4rem;
+    margin-bottom: .5rem;
+}
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    /* background-color: #13c6bd; */
+    width: 100%;
+    /* Full Screensize */
+    height: auto;
+    /* content Height */
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* background-color: #89f357; */
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* background-color:var(--primaryColor); */
+/* color: var(--lightColor); */
+/* font-family: var(--ffPrimary);
+  font-size: var(--regularFont);
+  font-weight: 400;
+  line-height: 1;
+letter-spacing: 0.1rem; */
+
+/* cursor: pointer;
+  border: none; */
+/* border-radius: 0.5rem; */
+/* padding: 1rem 3rem;
+  transition: background-color 0.3s ease; */
+/* } */
+
+button:hover {
+  background-color: var(--darkColor);
+  color: var(--lightColor);
+  transition: background-color 0.2s ease;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+
+/* Navbar code start*/
+
+body {
+    font-family: "Nunito Sans", serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5;
+    background-color: #eff2f7;
+}
+
+h1{
+    font-family: "Merienda", serif;
+    color: #212529;
+    font-size:  6rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: .5rem;
+}
+
+h2{
+    font-family: "Merienda", serif;
+    color: #212529;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+}
+
+h3{
+    font-family: "Nunito Sans", serif;
+    color: #212529;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 1rem;
+}
+
+h6{
+    font-family: "Nunito Sans", serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #212529;
+}
+
+p{
+   font-family: "Nunito Sans", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+button{
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    transition: background-color 0.2s ease;
+    font-family: "Nunito Sans", serif;
+}
+.logo{ 
+    width: 4rem;
+    height: 3rem;
+    margin-left: 3rem;
+}
+
+.navBar{
+    padding: 2rem ;
+}
+
+.navContainer{
+    max-width:1200px;
+    margin-left: 2rem;
+}
+
+.navBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+    gap:5rem;
+}
+.navBlock{
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.navBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolsBlock{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.coffee{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+}
+    
+.heroSection{
+    background: url(./assets/img/WhatsApp\ Image\ 2026-03-18\ at\ 2.55.45\ PM.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 28rem 0rem;
+}
+.heroContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.heroBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+    gap: 3rem;
+}
+.heroBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menupic{
+    padding: 2rem 0rem;
+}
+.menuContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.menupicBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem;
+    gap: 4rem;
+}
+.menupicBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.txtBlock{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu{
+    padding: 2rem 0rem;
+}
+.menuContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.menuBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem; 
+}
+.menuBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menuBox img{
+    height: 4rem;
+}
+
+.imageBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 1rem;
+    row-gap: 1rem 0rem;
+    gap: 3rem;
+    padding: 1rem 2rem;
+}
+.lovecoffeeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cupcoffeeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mochaBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.frappuccinoBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blackcoffeeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.loveheartcoffeeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.facility{
+    padding: 2rem 0rem;
+}
+
+.facilityContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.facilityBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+.facilityBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.facilityBox img{
+    height: 4rem;
+}
+
+.facilityimageBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    gap: 1rem;
+    padding: 0rem 5rem;
+}
+
+.facilityimageBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coffeeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.coffeebeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coffeesweetsBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.coffeereadyBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery{
+    padding: 2rem 0rem;
+}
+
+.galleryContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galleryBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.galleryBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.galleryBox img{
+    height: 4rem;
+}
+
+.coffeeimageBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem 0rem;
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+}
+
+.team{
+    padding: 2rem 0rem;
+}
+
+.teamContainter{
+    max-width:990px;
+    margin:auto;
+}
+.teamnameBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem 0rem;
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+    text-align:center
+}
+.teamBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.teamBox img{
+    height: 4rem;
+}
+
+.johnBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jdBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deoBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.johnBlock{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.johnBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.johnBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactslogo{
+    padding: 2rem 0rem;
+}
+.contactslogocontainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.contactslogoBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+.contactslogoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contactslogoBox img{
+    height: 4rem;
+}
+.contactsimgBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+    gap: 3rem;
+}
+
+.contactsimgBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.formBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacts{
+    padding: 2rem 0rem;
+}
+.contactsContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.contactsBody{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    gap: 1rem;
+    padding: 0rem 5rem;
+}
+.contactsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    text-align: center;
+    align-items:center;
+    
+}
+
+.timeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    text-align: center;
+    align-items:center;
+}
+.locationBox{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    text-align: center;
+    align-items:center;
+}
+.numberBox{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    text-align: center;
+    align-items:center;
+}
+
+.cardheader{
+    font-size: 50px;
+    box-sizing: border-box;
+}
+.copyright{
+    padding: 2rem ;
+}
+.copyrightContainter{
+    max-width: 1200px;
+    margin: auto;
+}
+.copyrightBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+.copyrightBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright{
+    border-top: 1px solid #bf9c79;
+}
+.span{
+    color: #bf9c79;
+}
